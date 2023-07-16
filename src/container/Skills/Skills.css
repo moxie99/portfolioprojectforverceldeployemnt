@@ -1,0 +1,163 @@
+.app__skills {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__skills-container {
+  width: 80%;
+  margin-top: 2rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+  .app__skills-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.app__skills-list {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 5rem;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .app__skills-list {
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.app__skills-item {
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.app__skills-item:hover {
+  transform: scale(1.1);
+}
+.app__skills-item div {
+  width: 90px;
+  height: 90px;
+  background-color: var(--white-color);
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.app__skills-item div img {
+  width: 60%;
+}
+.app__skills-item div:hover {
+  box-shadow: 0 0 25px "#feffc6";
+}
+@media screen and (min-width: 2000px) {
+  .app__skills-item div {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .app__skills-item div {
+    width: 70px;
+    height: 70px;
+  }
+}
+.app__skills-item p {
+  font-weight: 500;
+  margin-top: 0.35rem;
+}
+@media screen and (min-width: 2000px) {
+  .app__skills-item {
+    margin: 1rem 2rem;
+  }
+  .app__skills-item p {
+    margin-top: 0.7rem;
+  }
+}
+
+.app__skills-experience {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 900px) {
+  .app__skills-experience {
+    margin-top: 2rem;
+  }
+}
+
+.app__skills-experience-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.app__skills-experience-works {
+  flex: 1;
+}
+.app__skills-experience-works .app__skills-experience-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.app__skills-experience-works .app__skills-experience-work h4 {
+  font-weight: 500;
+}
+.app__skills-experience-works .app__skills-experience-work p {
+  font-weight: 400;
+  color: var(--teal-color);
+  margin-top: 6px;
+}
+.app__skills-experience-works .app__skills-experience-work:hover {
+  box-shadow: 0 0 25px "#feffc6";
+}
+
+.app__skills-experience-year {
+  margin-right: 3rem;
+}
+.app__skills-experience-year p {
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 450px) {
+  .app__skills-experience-year {
+    margin-right: 1rem;
+  }
+}
+
+.exp-tooltip {
+  max-width: 250px !important;
+  background-color: var(--white-color) !important;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 15px !important;
+  padding: 1rem !important;
+  color: var(--secondary-color) !important;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  text-align: justify !important;
+  line-height: 1.5 !important;
+  opacity: 1 !important;
+}
+@media screen and (max-width: 2000px) {
+  .exp-tooltip {
+    max-width: 500px !important;
+    line-height: 1.5 !important;
+    font-size: 1.75rem !important;
+  }
+}/*# sourceMappingURL=Skills.css.map */

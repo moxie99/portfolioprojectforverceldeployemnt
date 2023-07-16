@@ -1,0 +1,164 @@
+.app__navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    --webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 2;
+    position:fixed;   
+}
+
+.app__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        width: 90px;
+        height: 30px;
+        border-radius: 20%    ;
+        -webkit-border-radius: 20%    ;
+        -moz-border-radius: 20%    ;
+        -ms-border-radius: 20%    ;
+        -o-border-radius: 20%    ;
+
+        @media screen and (min-width: 2000px) {
+            width: 200px;
+            height: 50px;
+        }
+}
+}
+
+.app__navbar-links{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    li{
+        margin: 0 1rem;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        
+        div{
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            border-radius: 30%;
+            margin-bottom: 5px;
+            -webkit-border-radius: 30%;
+            -moz-border-radius: 30%;
+            -ms-border-radius: 30%;
+            -o-border-radius: 30%;
+}
+
+        a{
+            text-decoration: none;
+            color: var(--gray-color);
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                color: var(--secondary-color);
+            }
+        }
+
+                &:hover {
+                    div {
+                        background: var(--secondary-color);
+                    }
+                }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+        
+    }
+}
+
+.app__navbar-menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+
+    @media screen and (min-width: 900px) {
+            display: none;
+        }
+    svg{
+        width: 70%;
+        height: 70%;
+        color: var(--white-color);
+    }
+    div{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+         width: 80%;
+          height: 100vh;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          z-index: 5;
+          flex-direction: column;
+        background: url("../../../src/assets/whitebg.jpg");
+        background-color: var(--white-color);
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        box-shadow: 0 0 20px rgba(168, 167, 168, 0.25);
+
+    svg {
+            width: 35px;
+            height: 35px;
+            color: var(--secondary-color);
+            margin: 0.5rem 1rem 
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+
+            li{
+                margin: 1rem;
+
+                a {
+                        text-decoration: none;
+                        color: var(--gray-color);
+                        font-weight: 500;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease-in-out;
+                        cursor: pointer;
+                
+                        &:hover {
+                            color: var(--secondary-color);
+                        }
+                    }
+            }
+        }
+        @media screen and (min-width: 900px) {
+            display: none;
+        }
+    }
+}
