@@ -43,6 +43,7 @@ const Projects = () => {
       <div className="app__work-filter">
         {[
           "Native Android",
+          "Native IOS",
           "Cross-Platform Mobile",
           "Web Apps",
           "Backend As A Service",
